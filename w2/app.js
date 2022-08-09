@@ -17,7 +17,7 @@ const showOnPage = function (text) {
     let isWearPants = false;
 // if else statements
     if (temp >= 90 && temp <= 120) {
-      let  isWearShorts = true;
+        isWearShorts = true;
         isWearTankTop = true;
 
     showOnPage('You should wear shorts and a tank top.');
