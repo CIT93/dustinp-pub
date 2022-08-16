@@ -1,3 +1,4 @@
+alert
 // Display on page function
 const showOnPage = function (text) {
   let newParagraph = document.createElement('p');
@@ -9,11 +10,12 @@ const showOnPage = function (text) {
 // created function to determine if it is daytime or night time based on the hour
 let timeDecision = function (hour = 12) {
   if (hour >= 6 && hour <= 20) {
-   return showOnPage(tempDecision(40));
+    showOnPage(tempDecision(100));
   } else {
     return 'It is night time, you should stay inside.';
   }
 }
+timeDecision(100);
 
 
 // Most common decision that I make every day is to check the temp and decide what I should wear based on that information.
