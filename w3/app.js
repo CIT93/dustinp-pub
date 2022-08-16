@@ -8,14 +8,14 @@ const showOnPage = function (text) {
 };
 
 // created function to determine if it is daytime or night time based on the hour
-let timeDecision = function (hour = 12) {
+let timeDecision = function (hour = 10) {
   if (hour >= 6 && hour <= 20) {
-    showOnPage(tempDecision(100));
+   return showOnPage(tempDecision(100));
   } else {
-    return 'It is night time, you should stay inside.';
+    return showOnPage('It is night time, go back to bed.');
   }
 }
-timeDecision(100);
+
 
 
 // Most common decision that I make every day is to check the temp and decide what I should wear based on that information.
@@ -40,7 +40,7 @@ let tempDecision = function (temp) {
     return 'It is not a good time to be outside.';
   }
 };
-
+timeDecision();
 
 /*
 // Global Variables
