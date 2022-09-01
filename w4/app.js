@@ -1,4 +1,3 @@
-
 //Display on page function
 const showOnPage = function (text) {
   let newParagraph = document.createElement('p');
@@ -21,34 +20,30 @@ const temp = {
     this.temperature = temp;
   },
   whatToWear: '',
-  
+
   determineClothing: function (temp) {
-    if (temp >= 90  && temp <= 120) {
+    if (temp >= 90 && temp <= 120) {
       this.whatToWear = this.clothing.hot;
     } else if (temp >= 80 && temp <= 89) {
       this.whatToWear = this.clothing.warm;
     } else if (temp >= 60 && temp <= 79) {
-      this.whatToWear =  this.clothing.cool;
+      this.whatToWear = this.clothing.cool;
     } else {
       this.whatToWear = this.clothing.cold;
     }
-  }
+  },
 };
-temp.determineClothing(80)
-showOnPage(temp.whatToWear);
+temp.determineClothing(80);
+showOnPage(`Monday: ${temp.whatToWear}`);
 
-temp.determineClothing(68)
-showOnPage(temp.whatToWear);
+temp.determineClothing(68);
+showOnPage(`Tuesday: ${temp.whatToWear}`);
 
-temp.determineClothing(90)
-showOnPage(temp.whatToWear);
+temp.determineClothing(90);
+showOnPage(`Wednesday: ${temp.whatToWear}`);
 
-temp.determineClothing(70)
-showOnPage(temp.whatToWear);
+temp.determineClothing(70);
+showOnPage(`Thursday: ${temp.whatToWear}`);
 
-temp.determineClothing(45)
-showOnPage(temp.whatToWear);
-
-
-
-    
+temp.determineClothing(45);
+showOnPage(`Friday: ${temp.whatToWear}`);
