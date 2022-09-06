@@ -58,19 +58,23 @@ const weather = function () {
   return weather;
 };
 
-// Create a function that takes in the weather as a parameter and uses a for loop to loop through the clothing array and return the correct wardrobe.
+// Create a function that takes in the weather as a parameter and uses a forEach loop to loop through the clothing array and return the correct wardrobe.
 // Used if statement to determine if the weather matches the weather in the clothing array. If it does, return the clothing array.
 // If the weather doesn't match the weather in the clothing array, increment i by 1 to select the next object in the array.
 // Set wardrobe to an empty string to indicate wardrobe is not set.
+// Returned wardrobe to be used in the display function.
 const wardrobe = function (weather) {
   let wardrobe = '';
-  for (let i = 0; i < clothing.length; i++) {
-    if (weather === clothing[i].weather) {
-      wardrobe = clothing[i];
+  clothing.forEach(function (item,) {
+    if (weather === item.weather) {
+      wardrobe = item;
+    } else {
+      item++;
     }
-  }
+  });
   return wardrobe;
 };
+
 
 // Call the weather function and store the result in a variable.
 // Call the wardrobe function and pass in the weather variable as an argument, and store the result in a variable.
