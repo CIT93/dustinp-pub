@@ -78,5 +78,23 @@ const wardrobe = function (weather) {
 let weatherResult = weather();
 let wardrobeResult = wardrobe(weatherResult);
 showOnPage(
-  `The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+  `Monday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+);
+showOnPage(
+  `Tuesday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+);
+showOnPage(
+  `Wednesday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+);
+showOnPage(
+  `Thursday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+);
+showOnPage(
+  `Friday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+);
+showOnPage(
+  `Saturday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
+);
+showOnPage(
+  `Sunday: The weather is ${weatherResult}! You should wear a ${wardrobeResult.shirt}, ${wardrobeResult.pants}, and ${wardrobeResult.shoes}.`
 );
