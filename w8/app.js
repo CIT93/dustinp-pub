@@ -63,7 +63,7 @@ const wardrobe = function (weather) {
   return wardrobe;
 };
 // append output id to the DOM
-renderWhatToWear = function () {
+ const renderWhatToWear = function () {
   if (isRaining === true) {
     document.querySelector('#output').innerHTML =
       'It is raining, stay inside and watch netflix';
