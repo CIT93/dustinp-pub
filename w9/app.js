@@ -40,7 +40,11 @@ document.querySelector('#day-input').addEventListener('change', function (e) {
 document.querySelector('#temp-input').addEventListener('submit', function (e) {
   e.preventDefault();
   temp = e.target.elements.userInput.value;
-  if (temp > 120 || temp < 30) {
+  if ( temp === '' ) {
+    const message = document.createElement('div');
+    message.textContent = 'Please enter a temperature';
+    document.getElementById('left-blank').appendChild(message);
+  } else if (temp > 120 || temp < 30) {
    const error = document.createElement('div');
    error.textContent =
       'The temperature that you entered is a bit extreme! Please enter a valid temperature';
