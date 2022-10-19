@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Decision App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <form id="temp-input">
+      <span style="font-size: 1.5rem; ">What day is it?</span>
+      <br />
+      <select name="dayOfWeek" id="day-input">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <br />
+      <label>
+        <span style="font-size: 1.5rem; ">What is the temperature?</span>
+        <br />
+        Temperature:
+        <input type="text" name="userInput" placeholder="Enter A Temperature" />
+        <button>Submit</button>
+      </label>
+      <br />
+      <label>
+        <input id="rainy-checkbox" type="checkbox" />Is it raining?
+      </label>
+      <br />
+    </form>
+    <br />
+    <div id="left-blank"></div>
+    <div id="error"></div>
+    <div id="output"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+    <script src="uuidv4.js"></script>
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
