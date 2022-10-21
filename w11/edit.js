@@ -17,5 +17,17 @@ editInput.addEventListener('change', (e) => {
 
 editButton = document.getElementById('edit-button');
 editButton.addEventListener('click', (e) => {
+  const temp = editInput.value;
+  if (temp === '') {
+    const message = document.createElement('div');
+    message.textContent = 'Please enter a temperature';
+    document.getElementById('left-blank').appendChild(message);
+  } else if (temp > 120 || temp < 30) {
+    const error = document.createElement('div');
+    error.textContent =
+      'The temperature that you entered is a bit extreme! Please enter a valid temperature';
+    document.getElementById('error').appendChild(error);
+  } else {
   location.assign(`index.html`);
+  }
 });

@@ -113,6 +113,7 @@ const addItem = (temp, isRaining) => {
   saveWardrobe(whatToWear);
 };
 
+
 const editItem = (id, temp, isRaining) => {
   const whatToWear = getSavedWardrobe();
 
