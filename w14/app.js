@@ -7,22 +7,28 @@
 document.getElementById('userInput').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  let name = document.getElementById('product-name').value;
-  let quantity = document.getElementById('product-quantity').value;
+  let selection1 = document.getElementById('product-name1').value;
+  let quantity1 = document.getElementById('product-quantity1').value;
+
+  let selection2 = document.getElementById('product-name2').value;
+  let quantity2 = document.getElementById('product-quantity2').value;
+
+  let selection3 = document.getElementById('product-name3').value;
+  let quantity3 = document.getElementById('product-quantity3').value;
 
  
 
-  let product = createProduct(name, quantity);
+  createProduct(selection1, quantity1);
+  createProduct(selection2, quantity2);
+  createProduct(selection3, quantity3);
 
-  orderList.push(product);
 
   
-  // calling prototype method to save the products to local storage
+  // reset the form
+  document.getElementById('userInput').reset();
 
-  // calling prototype method to render the products to the screen
-  product?.renderProducts();
-  // calling prototype method to render the total to the screen
-  product.renderTotal();
+  // clear the error message after 3 seconds
+  clearErrorMessage();
 });
 
 // Calling the prototype method to render the products to the screen

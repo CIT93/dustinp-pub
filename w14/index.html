@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order app</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Order App</h1>
+    </div>
+    <div id="product-header">
+      <h2>Select A Product To Order</h2>
+    </div>
+    <div id="product-selection">
+      <form id="userInput">
+      <label for="name">Product Name:</label>
+      <select name="product" id="product-name1">
+        <option value="" disabled selected>Select An Item</option>
+        <option value="shoes">Shoes</option>
+        <option value="shirts">Shirts</option>
+        <option value="pants">Pants</option>
+        <option value="hat">Hat</option>
+        <option value="socks">Socks</option>
+        <option value="jacket">Jacket</option>
+        <option value="gloves">Gloves</option>
+        <option value="scarf">Scarf</option>
+        <option value="sweater">Sweater</option>
+        <option value="coat">Coat</option>
+      </select>
+      <label for="quantity">Quantity:</label>
+      <select name="quantity" id="product-quantity1">
+        <option value="" disabled selected>Select Quantity</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br />
+      <label for="name">Product Name:</label>
+      <select name="product" id="product-name2">
+        <option value="" disabled selected>Select An Item</option>
+        <option value="shoes">Shoes</option>
+        <option value="shirts">Shirts</option>
+        <option value="pants">Pants</option>
+        <option value="hat">Hat</option>
+        <option value="socks">Socks</option>
+        <option value="jacket">Jacket</option>
+        <option value="gloves">Gloves</option>
+        <option value="scarf">Scarf</option>
+        <option value="sweater">Sweater</option>
+        <option value="coat">Coat</option>
+      </select>
+      <label for="quantity">Quantity:</label>
+      <select name="quantity" id="product-quantity2">
+        <option value="" disabled selected>Select Quantity</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br />
+      <label for="name">Product Name:</label>
+      <select name="product" id="product-name3">
+        <option value="" disabled selected>Select An Item</option>
+        <option value="shoes">Shoes</option>
+        <option value="shirts">Shirts</option>
+        <option value="pants">Pants</option>
+        <option value="hat">Hats</option>
+        <option value="socks">Socks</option>
+        <option value="jacket">Jackets</option>
+        <option value="gloves">Gloves</option>
+        <option value="scarf">Scarfs</option>
+        <option value="sweater">Sweaters</option>
+        <option value="coat">Coats</option>
+      </select>
+      <label for="quantity">Quantity:</label>
+      <select name="quantity" id="product-quantity3">
+        <option value="" disabled selected>Select Quantity</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br />
+      <button type="submit" id="submit">Place Your Order</button>
+    </form>
+    </div>
+    
+
+    <div id="error"></div>
+    <div id="ordered-list"></div>
+    <div id="total"></div>
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

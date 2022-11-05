@@ -27,9 +27,21 @@ Products.prototype.multiplyProducts = function() {
 
 // function to create new instances of products objects
 const createProduct = (name, quantity,) =>{
-  let product = new Products(name, quantity);
+  // created if statement to check if the user has entered a product name and a quantity and if not to create an error message to the screen
+  if (!name || !quantity) {
+    let error = document.getElementById('error');
+    error.textContent = 'Please enter a product name and a quantity';
+    return;
+  }else {
+     let product = new Products(name, quantity);
+     product.saveToLocalStorage();
+     product.renderProducts();
+     product.renderTotal();
   return product;
-}
+  
+  }
+  
+};
 
 
 // Created a function using the prototype method to get the products from local storage
@@ -65,7 +77,7 @@ Products.prototype.renderProducts = function() {
   for (let i = 0; i < orderList.length; i++) {
     let liEl = document.createElement('li');
     orderedList.appendChild(liEl);
-    liEl.textContent = `You have ordered ${orderList[i].name} in the quantity of ${orderList[i].quantity} for a total of $${orderList[i].multiplyProducts()}`;
+    liEl.textContent = `You have ordered ${this.name} in the quantity of ${this.quantity} for a total of $${orderList[i].multiplyProducts()}`;
   }
 };
 
